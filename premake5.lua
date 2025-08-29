@@ -1,5 +1,6 @@
 -- https://premake.github.io/docs/What-Is-Premake
 workspace "Pocket Monster"
+   architecture ("x64")
    configurations { "Debug", "Release" }
    --location "game"
 
@@ -12,7 +13,6 @@ project "Sting Engine"
    cppdialect "C++23"
    files { "src/se/**.h", "src/se/**.cpp" }
 
-   architecture ("x64")
    targetdir ("building")
    includedirs {
       "include"
@@ -41,7 +41,6 @@ project "Pocket Monster"
    cppdialect "C++23"
    files { "src/game/**.h", "src/game/**.cpp" }
    targetdir ("game")
-   architecture ("x64")
 
    includedirs {
       "include",
@@ -62,3 +61,9 @@ project "Pocket Monster"
    filter { "configurations:Release" }
       defines { "NDEBUG" }
       optimize "On"
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+project "Assets"
+    basedir "game/"
+    files { "./game/assets/**.png" }
+    kind "Utility"
