@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="pmonster">
+      <UniqueIdentifier>{5D7A00AA-4947-5BB5-7260-495D5E8C9043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmonster\attacks">
+      <UniqueIdentifier>{5709F7EA-4302-163D-6C34-FBC1588CF548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmonster\children">
+      <UniqueIdentifier>{55FCBF6D-C112-BE03-0A8A-492576DF8E8B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scenes">
+      <UniqueIdentifier>{A602591B-92A4-83F1-7B5F-974567A00A42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="consts.h" />
+    <ClInclude Include="pmonster\PMon.h">
+      <Filter>pmonster</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\PMonNode.h">
+      <Filter>pmonster</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\attacks\Attack.h">
+      <Filter>pmonster\attacks</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\children\Gumboo.h">
+      <Filter>pmonster\children</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\SceneMain.h">
+      <Filter>scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pmonster\PMon.cpp">
+      <Filter>pmonster</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\PMonNode.cpp">
+      <Filter>pmonster</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\attacks\Attack.cpp">
+      <Filter>pmonster\attacks</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\children\Gumboo.cpp">
+      <Filter>pmonster\children</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\SceneMain.cpp">
+      <Filter>scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

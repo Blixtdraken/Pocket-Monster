@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Assets", "game\Assets.vcxproj", "{3824E0A7-24C6-0A7E-0D81-1ED2F9C191CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pocket Monster", "src\game\Pocket Monster.vcxproj", "{13828BC1-FF4F-7FC7-E8E3-EFEDD4505B2C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sting Engine", "src\se\Sting Engine.vcxproj", "{204313B2-0CA6-A256-B52B-DB0CA16D6ED9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3824E0A7-24C6-0A7E-0D81-1ED2F9C191CE}.Debug|x64.ActiveCfg = Debug|x64
+		{3824E0A7-24C6-0A7E-0D81-1ED2F9C191CE}.Debug|x64.Build.0 = Debug|x64
+		{3824E0A7-24C6-0A7E-0D81-1ED2F9C191CE}.Release|x64.ActiveCfg = Release|x64
+		{3824E0A7-24C6-0A7E-0D81-1ED2F9C191CE}.Release|x64.Build.0 = Release|x64
+		{13828BC1-FF4F-7FC7-E8E3-EFEDD4505B2C}.Debug|x64.ActiveCfg = Debug|x64
+		{13828BC1-FF4F-7FC7-E8E3-EFEDD4505B2C}.Debug|x64.Build.0 = Debug|x64
+		{13828BC1-FF4F-7FC7-E8E3-EFEDD4505B2C}.Release|x64.ActiveCfg = Release|x64
+		{13828BC1-FF4F-7FC7-E8E3-EFEDD4505B2C}.Release|x64.Build.0 = Release|x64
+		{204313B2-0CA6-A256-B52B-DB0CA16D6ED9}.Debug|x64.ActiveCfg = Debug|x64
+		{204313B2-0CA6-A256-B52B-DB0CA16D6ED9}.Debug|x64.Build.0 = Debug|x64
+		{204313B2-0CA6-A256-B52B-DB0CA16D6ED9}.Release|x64.ActiveCfg = Release|x64
+		{204313B2-0CA6-A256-B52B-DB0CA16D6ED9}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
