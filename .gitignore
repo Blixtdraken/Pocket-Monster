@@ -34,3 +34,5 @@ local.properties
 *.gxp
 *.iobj
 *.ipdb
+building
+obj
