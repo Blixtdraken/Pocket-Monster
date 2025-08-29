@@ -11,7 +11,7 @@ public:
     RGB operator*=(float scalar){r *= scalar;g *= scalar;b *= scalar; return *this;}
     RGB operator/=(float scalar){r /= scalar;g /= scalar;b /= scalar; return *this;}
     ///////////////////////////////////////////////
-    Color rayify(){return Color(r,g,b);}
+    Color rayify(){return Color(r,g,b,a);}
     ///////////////////////////////////////////
     unsigned char r,g,b,a;
 };

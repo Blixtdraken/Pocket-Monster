@@ -1,6 +1,7 @@
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\main.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\main.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMon.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMon.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMonNode.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMonNode.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attacks\Attack.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Attack.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\children\Gumboo.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Gumboo.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\scenes\SceneMain.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\SceneMain.obj
+C:\Users\blixt\Pocket-Monster\src\game\main.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\main.obj
+C:\Users\blixt\Pocket-Monster\src\game\nodes\PMonNode.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\PMonNode.obj
+C:\Users\blixt\Pocket-Monster\src\game\pmonster\attack\children\Goop.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\Goop.obj
+C:\Users\blixt\Pocket-Monster\src\game\pmonster\PMon.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\PMon.obj
+C:\Users\blixt\Pocket-Monster\src\game\pmonster\attack\Attack.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\Attack.obj
+C:\Users\blixt\Pocket-Monster\src\game\pmonster\children\Gumboo.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\Gumboo.obj
+C:\Users\blixt\Pocket-Monster\src\game\scenes\SceneMain.cpp;C:\Users\blixt\Pocket-Monster\src\game\obj\Debug\SceneMain.obj

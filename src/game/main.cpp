@@ -12,7 +12,8 @@ int main()
 	{
 
 		
-		InitWindow(screenWidth, screenHeight, "Pocket Monster");
+		InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Pocket Monster");
+		SetWindowIcon(LoadImage("assets/sprites/gumboo-1.png"));
 		std::cout << "Started\n";
 		se::SceneManager& scene_manager = se::SceneManager::GetInstance();
 		SceneMain* main_scene = new SceneMain();

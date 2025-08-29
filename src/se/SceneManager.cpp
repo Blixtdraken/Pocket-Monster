@@ -6,6 +6,7 @@
 void se::SceneManager::sceneLoop()
 {
    m_current_scene->_sceneSetup();
+   m_current_scene->nodesReady();
    while (!WindowShouldClose())
    {
       m_current_scene->nodesHandleInput();

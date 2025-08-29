@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="nodes">
+      <UniqueIdentifier>{7E1C0410-EA30-2CC1-B3B2-CF201F8628F2}</UniqueIdentifier>
+    </Filter>
     <Filter Include="pmonster">
       <UniqueIdentifier>{5D7A00AA-4947-5BB5-7260-495D5E8C9043}</UniqueIdentifier>
     </Filter>
@@ -16,10 +19,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="consts.h" />
-    <ClInclude Include="pmonster\PMon.h">
-      <Filter>pmonster</Filter>
+    <ClInclude Include="nodes\PMonNode.h">
+      <Filter>nodes</Filter>
     </ClInclude>
-    <ClInclude Include="pmonster\PMonNode.h">
+    <ClInclude Include="pmonster\PMon.h">
       <Filter>pmonster</Filter>
     </ClInclude>
     <ClInclude Include="pmonster\attacks\Attack.h">
@@ -34,10 +37,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="pmonster\PMon.cpp">
-      <Filter>pmonster</Filter>
+    <ClCompile Include="nodes\PMonNode.cpp">
+      <Filter>nodes</Filter>
     </ClCompile>
-    <ClCompile Include="pmonster\PMonNode.cpp">
+    <ClCompile Include="pmonster\PMon.cpp">
       <Filter>pmonster</Filter>
     </ClCompile>
     <ClCompile Include="pmonster\attacks\Attack.cpp">

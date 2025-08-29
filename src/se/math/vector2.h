@@ -22,6 +22,8 @@ namespace se
         Vec2 operator*(Vec2 right){return Vec2(x*right.x, y*right.y);}
         Vec2 operator/=(float right){return Vec2(x/right, y/right);}
         Vec2 operator*=(float right){return Vec2(x*right, y*right);}
+        Vec2 operator+(const Vec2& right){return Vec2(x+right.x, y+right.y);}
+        Vec2 operator-(const Vec2& right){return Vec2(x-right.x, y-right.y);}
         //Vec2 operator=(::Vector2 right){return Vec2(right.x,right.y);}
         ////////////////////////////////////////////////////////
         float x,y;

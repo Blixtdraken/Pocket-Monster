@@ -5,6 +5,14 @@ void se::iScene::addNode(iNode* node)
     m_scene_nodes.push_back(node);
 }
 
+void se::iScene::nodesReady()
+{
+    for (auto node : m_scene_nodes)
+    {
+        node->_ready();
+    }
+}
+
 void se::iScene::nodesHandleInput()
 {
     for (auto node : m_scene_nodes)

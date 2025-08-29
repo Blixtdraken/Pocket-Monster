@@ -15,9 +15,12 @@ namespace se
     public:
         RGB m_scene_color = GRAY;
         virtual void _sceneSetup()=0;
+        
 
         void addNode(iNode* node);
-    
+
+        void nodesReady();
+        
         void nodesHandleInput();
         void nodesUpdate(double _deltaTime);
         void nodesRender();

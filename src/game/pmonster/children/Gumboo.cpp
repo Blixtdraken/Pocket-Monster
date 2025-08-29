@@ -1,11 +1,6 @@
 ﻿#include "Gumboo.h"
 
-std::vector<Attack*> Gumboo::getAttacks()
-{
-    std::vector<Attack*> attacks;
-    
-    return attacks;
-}
+
 
 std::vector<Texture2D*> Gumboo::getSprites()
 {
