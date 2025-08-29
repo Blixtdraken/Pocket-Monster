@@ -41,6 +41,8 @@ project "Pocket Monster"
    cppdialect "C++23"
    files { "src/game/**.h", "src/game/**.cpp" }
    targetdir ("game")
+   debugdir "game"
+   
 
    includedirs {
       "include",
@@ -57,13 +59,15 @@ project "Pocket Monster"
    filter { "configurations:Debug" }
       defines { "DEBUG" }
       symbols "On"
-
+      debugdir "game"
    filter { "configurations:Release" }
       defines { "NDEBUG" }
       optimize "On"
+      debugdir "game"
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 project "Assets"
     basedir "game/"
     files { "./game/assets/**.png" }
     kind "Utility"
+    

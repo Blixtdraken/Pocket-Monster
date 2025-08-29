@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include <raylib.h>
 #include <vector>
 
 #include "attacks/Attack.h"
@@ -16,7 +17,8 @@ private:
 
 public:
     virtual float getMaxHP() = 0;
-    virtual std::vector<Attack>  getAttacks() = 0;
+    virtual std::vector<Attack*>  getAttacks() = 0;
+    virtual std::vector<Texture2D*> getSprites() = 0;
 protected:
     
 };

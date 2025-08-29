@@ -48,8 +48,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="assets\sprites\gloomba-1.png" />
-    <Image Include="assets\sprites\gloomba-2.png" />
+    <Image Include="assets\sprites\gumboo-1.png" />
+    <Image Include="assets\sprites\gumboo-2.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,22 +15,11 @@ int main()
 		InitWindow(screenWidth, screenHeight, "Pocket Monster");
 		std::cout << "Started\n";
 		se::SceneManager& scene_manager = se::SceneManager::GetInstance();
-		SceneMain main_scene = SceneMain();
-		scene_manager.setMainScene(main_scene);
+		SceneMain* main_scene = new SceneMain();
 		
-		while (!WindowShouldClose())
-		{
-		
-			
-			BeginDrawing();
-			ClearBackground(RGB(189, 250, 255).rayify());
-			EndDrawing();
-
-
-		}
+		scene_manager.startSceneLoop(main_scene);
 	
 		CloseWindow();
-	
 	}
 
 

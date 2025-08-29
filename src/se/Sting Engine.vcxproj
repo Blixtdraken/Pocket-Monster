@@ -96,8 +96,8 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="RayWindowManager.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="WindowManager.h" />
     <ClInclude Include="debug\errors.h" />
     <ClInclude Include="interfaces\iNode.h" />
     <ClInclude Include="interfaces\iScene.h" />
@@ -105,8 +105,8 @@
     <ClInclude Include="math\vector2.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RayWindowManager.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="interfaces\iNode.cpp" />
     <ClCompile Include="interfaces\iScene.cpp" />
   </ItemGroup>

@@ -1,8 +1,13 @@
 ﻿#include "iScene.h"
 
+void se::iScene::addNode(iNode* node)
+{
+    m_scene_nodes.push_back(node);
+}
+
 void se::iScene::nodesHandleInput()
 {
-    for (auto node : scene_nodes)
+    for (auto node : m_scene_nodes)
     {
         node->_handleInput();
     }
@@ -10,7 +15,7 @@ void se::iScene::nodesHandleInput()
 
 void se::iScene::nodesUpdate(double _deltaTime)
 {
-    for (auto node : scene_nodes)
+    for (auto node : m_scene_nodes)
     {
         node->_update(_deltaTime);
     }
@@ -18,10 +23,8 @@ void se::iScene::nodesUpdate(double _deltaTime)
 
 void se::iScene::nodesRender()
 {
-    BeginDrawing();
-    for (auto node : scene_nodes)
+    for (auto node : m_scene_nodes)
     {
         node->_render();
     }
-    EndDrawing();
 }

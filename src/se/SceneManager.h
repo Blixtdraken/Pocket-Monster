@@ -12,10 +12,11 @@ namespace se
         //////////////////////////////////////////////
     private:
         iScene* m_current_scene = nullptr;
+        void sceneLoop();
     public:
         //////////////////////////////////////
-        void changeScene(iScene& new_scene);
-        void setMainScene(iScene& new_scene);
+        void changeScene(iScene* new_scene);
+        void startSceneLoop(iScene* main_scene);
     
     
     };

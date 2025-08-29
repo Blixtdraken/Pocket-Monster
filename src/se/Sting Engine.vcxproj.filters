@@ -12,8 +12,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RayWindowManager.h" />
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="WindowManager.h" />
     <ClInclude Include="debug\errors.h">
       <Filter>debug</Filter>
     </ClInclude>
@@ -31,8 +31,8 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RayWindowManager.cpp" />
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="interfaces\iNode.cpp">
       <Filter>interfaces</Filter>
     </ClCompile>

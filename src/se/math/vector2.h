@@ -12,7 +12,7 @@ namespace se
         Vec2(float _all): x(_all), y (_all){}
         Vec2(::Vector2 raylibVector): x(raylibVector.x), y (raylibVector.y){}
         //////////////////////////////////////////////////////////////
-        Vector2 rayify(){return ::Vector2(x,y);}
+        Vector2   rayify(){return ::Vector2(x,y);}
         Vec2      normalized(){return *this/length();}
         float     length(){return std::sqrt(std::powf(x, 2.0) + std::powf(y, 2.0));}
         Vec2      rotate(float _angle){return Vec2();} // TODO

@@ -4,8 +4,9 @@
 
 class SceneMain: public se::iScene
 {
-    void _sceneSetup() override;
     
 public:
-    int num = 0;
+    void _sceneSetup() override;
+
+    
 };

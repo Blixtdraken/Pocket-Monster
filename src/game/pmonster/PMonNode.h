@@ -4,8 +4,10 @@
 
 class PMonNode: public se::iNode
 {
-    PMonNode(PMon& _pmon): m_this_pmon(_pmon){}
-    PMon& m_this_pmon;
-
+    
+    PMon& m_node_pmon;
+    Texture2D* m_currentSprite = nullptr;
+public:
+    PMonNode(PMon& _pmon): m_node_pmon(_pmon), m_currentSprite(_pmon.getSprites()[0]){} // Temp test on the current srpite part
     void _render() override;
 };

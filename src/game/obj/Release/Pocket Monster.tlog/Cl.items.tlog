@@ -1,2 +1,6 @@
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\main.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\main.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMon.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\PMon.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMonNode.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\PMonNode.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attacks\Attack.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\Attack.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\children\Gumboo.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\Gumboo.obj
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\scenes\SceneMain.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Release\SceneMain.obj

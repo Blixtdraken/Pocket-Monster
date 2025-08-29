@@ -2,17 +2,21 @@
 #include <vector>
 
 #include "iNode.h"
+#include "../math/rgb.h"
 
 namespace se
 {
     class iScene
     {
     
-        std::vector<iNode*> scene_nodes;
+        std::vector<iNode*> m_scene_nodes;
+        
+        
     public:
-        iScene() {}
+        RGB m_scene_color = GRAY;
         virtual void _sceneSetup()=0;
-    
+
+        void addNode(iNode* node);
     
         void nodesHandleInput();
         void nodesUpdate(double _deltaTime);
