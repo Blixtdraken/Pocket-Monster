@@ -7,8 +7,12 @@
 
 void SceneMain::_sceneSetup()
 {
-    addNode(new PMonNode(*new Gumboo(MonsterSide::FRIEND)));
-    addNode(new PMonNode(*new Gumboo(MonsterSide::ENEMY)));
+    PMonNode* friend_pmon = new PMonNode(new Gumboo(MonsterSide::FRIEND));
+    PMonNode* enemy_pmon = new PMonNode(new Gumboo(MonsterSide::ENEMY));
+    friend_pmon->setEnemyPMon(enemy_pmon);
+    enemy_pmon->setEnemyPMon(friend_pmon);
+    addNode(friend_pmon);
+    addNode(enemy_pmon);
     //SetWindowOpacity(0.1);
     //SetConfigFlags(FLAG_WINDOW_TRANSPARENT);
     

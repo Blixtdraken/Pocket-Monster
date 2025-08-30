@@ -100,6 +100,7 @@
     <ClInclude Include="pmonster\PMon.h" />
     <ClInclude Include="pmonster\attack\Attack.h" />
     <ClInclude Include="pmonster\children\Gumboo.h" />
+    <ClInclude Include="pmonster\PMonEnums.h" />
     <ClInclude Include="scenes\SceneMain.h" />
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +185,7 @@
     <ClCompile Include="pmonster\PMon.cpp" />
     <ClCompile Include="pmonster\attack\Attack.cpp" />
     <ClCompile Include="pmonster\children\Gumboo.cpp" />
+    <ClCompile Include="pmonster\PMonEnums.cpp" />
     <ClCompile Include="scenes\SceneMain.cpp" />
   </ItemGroup>
   <ItemGroup>

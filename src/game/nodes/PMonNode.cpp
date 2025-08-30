@@ -5,9 +5,9 @@
 
 void PMonNode::_ready()
 {
-    m_local_position = m_node_pmon.getSide() == MonsterSide::FRIEND ? FRIEND_MON_POS : ENEMEY_MON_POS ;
+    m_local_position = m_node_pmon->getSide() == MonsterSide::FRIEND ? FRIEND_MON_POS : ENEMEY_MON_POS ;
     
-    m_currentSprite = m_node_pmon.getSprites()[ m_node_pmon.getSide() == MonsterSide::FRIEND ? 1 : 0 ];
+    m_currentSprite = m_node_pmon->getSprites()[ m_node_pmon->getSide() == MonsterSide::FRIEND ? 1 : 0 ];
 }
 
 void PMonNode::_render()
@@ -25,7 +25,7 @@ void PMonNode::_render()
     DrawTextureEx(*m_currentSprite, (m_local_position-offset).rayify(), m_rotation, m_scale, WHITE);
     
     
-    std::cout << m_local_position.x << " || " << m_local_position.y << "\n";
+    std::cout << cElement::GetElementsMultiplier(m_node_pmon->getElements(), m_enemy_node->getPMon()->getElements())<< "\n";
 }
 
 void PMonNode::_update(double _deltaTime)

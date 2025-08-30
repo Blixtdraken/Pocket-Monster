@@ -2,19 +2,10 @@
 #include <raylib.h>
 #include <vector>
 
+#include "PMonEnums.h"
 #include "attack/Attack.h"
 
 
-enum class Element
-{
-    
-};
-
-enum class MonsterSide
-{
-    FRIEND = 0,
-    ENEMY
-};
 
 class PMon
 {
