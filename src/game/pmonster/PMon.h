@@ -11,7 +11,6 @@ class PMon
 {
 protected:
     float m_hp = 50.0f;
-    float m_max_hp = 50.0f;
     MonsterSide m_side;
 public:
     PMon(float _max_hp, MonsterSide _side ): m_side(_side){m_hp = _max_hp;}
@@ -20,9 +19,12 @@ public:
     
     virtual std::vector<Element> getElements() = 0;
     virtual std::vector<Attack*>  getAttacks() = 0;
-    virtual std::vector<Texture2D*> getSprites() = 0;
+    virtual std::vector<Texture2D*> getSprites() = 0; // Index 0 = Front | Index 1 = Back
 
     virtual MonsterSide getSide(){return m_side;}
+
+    void damage(float _damage);
+    virtual void _on_damage(float _damage){}
     
 protected:
     

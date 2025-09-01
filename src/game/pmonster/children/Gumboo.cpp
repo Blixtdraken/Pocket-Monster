@@ -4,10 +4,10 @@
 
 std::vector<Texture2D*> Gumboo::getSprites()
 {
-    std::vector<Texture2D*> sprites;
-
-    sprites.push_back(new Texture2D(LoadTexture("assets/sprites/gumboo-1.png")));
-    sprites.push_back(new Texture2D(LoadTexture("assets/sprites/gumboo-2.png")));
-
-    return sprites;
+    return
+    {
+    new Texture2D(LoadTexture("assets/sprites/gumboo-1.png")),
+    new Texture2D(LoadTexture("assets/sprites/gumboo-2.png")),
+    };
+    
 }

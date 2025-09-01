@@ -95,7 +95,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="consts.h" />
+    <ClInclude Include="nodes\ButtonNode.h" />
     <ClInclude Include="nodes\PMonNode.h" />
+    <ClInclude Include="pmonster\attack\children\BasicAttack.h" />
     <ClInclude Include="pmonster\attack\children\Goop.h" />
     <ClInclude Include="pmonster\PMon.h" />
     <ClInclude Include="pmonster\attack\Attack.h" />
@@ -105,7 +107,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="nodes\ButtonNode.cpp" />
     <ClCompile Include="nodes\PMonNode.cpp" />
+    <ClCompile Include="pmonster\attack\children\BasicAttack.cpp" />
     <ClCompile Include="pmonster\attack\children\Goop.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
