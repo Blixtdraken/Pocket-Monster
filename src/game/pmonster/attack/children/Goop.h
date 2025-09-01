@@ -1,10 +1,10 @@
 ﻿#pragma once
 #include "BasicAttack.h"
-#include "../Attack.h"
+#include "../iAttack.h"
 
 class Goop: public BasicAttack
 {
-public:
+private:
     
     
 protected:

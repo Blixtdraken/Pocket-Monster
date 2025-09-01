@@ -1,6 +1,12 @@
 ﻿#include "Gumboo.h"
 
 
+std::vector<iAttack*> Gumboo::getAttacks()
+{
+    return {
+        new Goop()
+    }; 
+}
 
 std::vector<Texture2D*> Gumboo::getSprites()
 {

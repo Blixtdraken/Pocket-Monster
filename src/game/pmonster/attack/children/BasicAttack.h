@@ -1,9 +1,9 @@
 ﻿#pragma once
-#include "../Attack.h"
-class BasicAttack: public Attack
+#include "../iAttack.h"
+class BasicAttack: public iAttack
 {
 public:
-    void useAttack(PMon& _defending, PMon& _attacking) override;
+    void useAttack(iPMon& _defending, iPMon& _attacking) override;
     
 protected:
     virtual float getDamage() = 0;
@@ -11,4 +11,5 @@ protected:
 public:
     virtual const std::string& getName() = 0;
     virtual const std::string& getDescription() = 0;
+    const int& getCooldown() override{return 0.0f;}
 };

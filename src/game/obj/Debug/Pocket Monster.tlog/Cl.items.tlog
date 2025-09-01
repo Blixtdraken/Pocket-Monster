@@ -1,10 +1,12 @@
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\main.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\main.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\nodes\ButtonNode.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\ButtonNode.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\nodes\Button.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Button.obj
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\nodes\PMonNode.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMonNode.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\nodes\TextButton.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\TextButton.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMonEnums.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMonEnums.obj
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attack\children\BasicAttack.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\BasicAttack.obj
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attack\children\Goop.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Goop.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMon.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMon.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attack\Attack.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Attack.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attack\children\Slap.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Slap.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\attack\iAttack.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\iAttack.obj
 C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\children\Gumboo.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\Gumboo.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\PMonEnums.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\PMonEnums.obj
-C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\scenes\SceneMain.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\SceneMain.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\pmonster\iPMon.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\iPMon.obj
+C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\scenes\BattleScene.cpp;C:\Users\pontdade\Documents\Projects\Git\05-battle-simulation\src\game\obj\Debug\BattleScene.obj

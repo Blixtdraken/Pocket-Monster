@@ -67,7 +67,8 @@ project "Pocket Monster"
 ------------------------------------------------------------------------
 ------------------------------------------------------------------------
 project "Assets"
-    basedir "game/"
-    files { "./game/assets/**.png" }
+    basedir "game/project"
+    files { "./game/assets/**" }
     kind "Utility"
+    
     

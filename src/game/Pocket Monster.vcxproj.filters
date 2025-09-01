@@ -7,8 +7,11 @@
     <Filter Include="pmonster">
       <UniqueIdentifier>{5D7A00AA-4947-5BB5-7260-495D5E8C9043}</UniqueIdentifier>
     </Filter>
-    <Filter Include="pmonster\attacks">
-      <UniqueIdentifier>{5709F7EA-4302-163D-6C34-FBC1588CF548}</UniqueIdentifier>
+    <Filter Include="pmonster\attack">
+      <UniqueIdentifier>{647C07AA-D007-756E-D918-F8624523D16E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pmonster\attack\children">
+      <UniqueIdentifier>{3C361397-285B-6217-51A6-47A73D2A6135}</UniqueIdentifier>
     </Filter>
     <Filter Include="pmonster\children">
       <UniqueIdentifier>{55FCBF6D-C112-BE03-0A8A-492576DF8E8B}</UniqueIdentifier>
@@ -19,37 +22,73 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="consts.h" />
+    <ClInclude Include="nodes\Button.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
     <ClInclude Include="nodes\PMonNode.h">
       <Filter>nodes</Filter>
     </ClInclude>
-    <ClInclude Include="pmonster\PMon.h">
+    <ClInclude Include="nodes\TextButton.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\PMonEnums.h">
       <Filter>pmonster</Filter>
     </ClInclude>
-    <ClInclude Include="pmonster\attacks\Attack.h">
-      <Filter>pmonster\attacks</Filter>
+    <ClInclude Include="pmonster\attack\children\BasicAttack.h">
+      <Filter>pmonster\attack\children</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\attack\children\Goop.h">
+      <Filter>pmonster\attack\children</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\attack\children\Slap.h">
+      <Filter>pmonster\attack\children</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\attack\iAttack.h">
+      <Filter>pmonster\attack</Filter>
     </ClInclude>
     <ClInclude Include="pmonster\children\Gumboo.h">
       <Filter>pmonster\children</Filter>
     </ClInclude>
-    <ClInclude Include="scenes\SceneMain.h">
+    <ClInclude Include="pmonster\iPMon.h">
+      <Filter>pmonster</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\BattleScene.h">
       <Filter>scenes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="nodes\Button.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
     <ClCompile Include="nodes\PMonNode.cpp">
       <Filter>nodes</Filter>
     </ClCompile>
-    <ClCompile Include="pmonster\PMon.cpp">
+    <ClCompile Include="nodes\TextButton.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\PMonEnums.cpp">
       <Filter>pmonster</Filter>
     </ClCompile>
-    <ClCompile Include="pmonster\attacks\Attack.cpp">
-      <Filter>pmonster\attacks</Filter>
+    <ClCompile Include="pmonster\attack\children\BasicAttack.cpp">
+      <Filter>pmonster\attack\children</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\attack\children\Goop.cpp">
+      <Filter>pmonster\attack\children</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\attack\children\Slap.cpp">
+      <Filter>pmonster\attack\children</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\attack\iAttack.cpp">
+      <Filter>pmonster\attack</Filter>
     </ClCompile>
     <ClCompile Include="pmonster\children\Gumboo.cpp">
       <Filter>pmonster\children</Filter>
     </ClCompile>
-    <ClCompile Include="scenes\SceneMain.cpp">
+    <ClCompile Include="pmonster\iPMon.cpp">
+      <Filter>pmonster</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\BattleScene.cpp">
       <Filter>scenes</Filter>
     </ClCompile>
   </ItemGroup>

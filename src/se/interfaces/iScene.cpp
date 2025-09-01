@@ -33,6 +33,7 @@ void se::iScene::nodesRender()
 {
     for (auto node : m_scene_nodes)
     {
+        if (!node->visible) return;
         node->_render();
     }
 }

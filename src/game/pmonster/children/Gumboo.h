@@ -1,19 +1,15 @@
 ﻿#pragma once
-#include "../PMon.h"
+#include "../iPMon.h"
 #include "../attack/children/Goop.h"
 #include "../PMonEnums.h"
-class Gumboo: public PMon
+class Gumboo: public iPMon
 {
 public:
-    Gumboo(MonsterSide _side): PMon(80.0f, _side){}
+    Gumboo(MonsterSide _side): iPMon( _side){}
     cElement test;
-    std::vector<Attack*>    getAttacks()    override
-    {
-        return {
-            new Goop()
-        };
-    }
+    std::vector<iAttack*>    getAttacks()    override;
     std::vector<Texture2D*> getSprites()    override;
-    std::vector<Element>    getElements()   override    { return { NORMAL, WATER } ;
-    }
+    std::vector<Element>    getElements()   override    { return { NORMAL, WATER };}
+
+    float getMaxHP() override{return 280.0f;}
 };

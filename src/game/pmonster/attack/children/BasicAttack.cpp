@@ -1,8 +1,8 @@
 ﻿#include "BasicAttack.h"
 
-#include "../../PMon.h"
+#include "../../iPMon.h"
 
-void BasicAttack::useAttack(PMon& _defending, PMon&)
+void BasicAttack::useAttack(iPMon& _defending, iPMon&)
 {
     _defending.damage(getDamage());
 }

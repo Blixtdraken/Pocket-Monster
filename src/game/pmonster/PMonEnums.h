@@ -42,7 +42,6 @@ public:
         {
             for (Element defender: _defending)
             {
-                
                 multiplier_list.push_back(ELEMENT_TABLE[attacker][defender]);
             } 
         }
