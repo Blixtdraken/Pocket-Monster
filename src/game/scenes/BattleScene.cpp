@@ -1,5 +1,6 @@
 ﻿#include "BattleScene.h"
 
+#include <iostream>
 #include <print>
 
 
@@ -28,10 +29,12 @@ void BattleScene::_sceneSetup()
         if (i < friend_attacks.size())
         {
             iAttack* attack = friend_attacks[i];
-            attack_buttons[0]->setOnReleased([=]
+            attack_buttons[i]->setOnReleased([=]
             {
-                std::printf("%s\n", attack->getName().c_str()); //TODO
+                std::string name = attack->getName();
+                std::cout << name << "\n";
             });
+            attack_buttons[i]->m_text = attack->getName();
         }
 
         addNode(attack_buttons[i]);

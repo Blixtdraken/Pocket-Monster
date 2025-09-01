@@ -11,6 +11,6 @@ protected:
     float getDamage() override{return 60.0f;}
 
 public:
-    const std::string& getName() override;
-    const std::string& getDescription() override;
+    const std::string getName() override;
+    const std::string getDescription() override;
 };
