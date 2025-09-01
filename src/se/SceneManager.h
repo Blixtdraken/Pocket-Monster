@@ -16,7 +16,7 @@ namespace se
     public:
         //////////////////////////////////////
         void changeScene(iScene* new_scene);
-        void startSceneLoop(iScene* main_scene);
+        void initSceneLoop(iScene* main_scene);
     
     
     };

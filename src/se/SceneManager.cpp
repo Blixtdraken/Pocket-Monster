@@ -32,7 +32,7 @@ void se::SceneManager::changeScene(iScene* new_scene)
 }
 
 
-void se::SceneManager::startSceneLoop(iScene* main_scene)
+void se::SceneManager::initSceneLoop(iScene* main_scene)
 {
    if (main_scene)
    {

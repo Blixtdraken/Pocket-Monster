@@ -1,6 +1,6 @@
 ﻿#pragma once
 #include "../Attack.h"
-class BasicAttack: Attack
+class BasicAttack: public Attack
 {
 public:
     void useAttack(PMon& _defending, PMon& _attacking) override;

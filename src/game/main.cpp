@@ -18,7 +18,7 @@ int main()
 		se::SceneManager& scene_manager = se::SceneManager::GetInstance();
 		SceneMain* main_scene = new SceneMain();
 		
-		scene_manager.startSceneLoop(main_scene);
+		scene_manager.initSceneLoop(main_scene);
 	
 		CloseWindow();
 	}
