@@ -11,6 +11,7 @@ namespace se
 
         //////////////////////////////////////////////
     private:
+        SceneManager(){}
         iScene* m_current_scene = nullptr;
         void sceneLoop();
     public:

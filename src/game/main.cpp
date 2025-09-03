@@ -10,9 +10,10 @@
 
 int main()
 	{
-
+		SetRandomSeed(time(NULL));
 		InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Pocket Monster");
 		SetWindowIcon(LoadImage("assets/sprites/gumboo-1.png"));
+		SetTargetFPS(GetMonitorRefreshRate(GetCurrentMonitor()));
 		std::cout << "Started\n";
 		se::SceneManager& scene_manager = se::SceneManager::GetInstance();
 		BattleScene* main_scene = new BattleScene();

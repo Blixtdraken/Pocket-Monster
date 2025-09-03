@@ -2,5 +2,9 @@
 
 void iPMon::damage(float _damage)
 {
-    _on_damage(_damage);
+    if (_on_damage(_damage))
+    {
+        m_damage_taken += _damage;
+    }
+    
 }

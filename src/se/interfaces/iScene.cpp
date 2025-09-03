@@ -35,5 +35,6 @@ void se::iScene::nodesRender()
     {
         if (!node->visible) return;
         node->_render();
+        
     }
 }

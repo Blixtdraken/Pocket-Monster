@@ -7,5 +7,7 @@ const std::string Goop::getName()
 
 const std::string Goop::getDescription()
 {
-    return "Goops enemy monster to deal 60 damage.";
+    return
+     "Goops enemy monster\n"
+        "to deal 60 damage.";
 }

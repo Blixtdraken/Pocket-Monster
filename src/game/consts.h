@@ -7,9 +7,11 @@ const int SCREEN_HEIGHT = 720;
 
 
 //Screen Positions
-const se::Vec2 FRIEND_MON_POS = se::Vec2(440,540);
-const se::Vec2 ENEMEY_MON_POS = se::Vec2(900,335);
+const se::Vec2 FRIEND_MON_POS = se::Vec2(380,554);
+const se::Vec2 ENEMEY_MON_POS = se::Vec2(840,364);
 
+//Animations
+const float ANIMATION_TIME = 1.0f;
 
 
 //Element multiplier   Layout [Attacker][Defender]

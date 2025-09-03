@@ -15,16 +15,28 @@ namespace se
         Vector2   rayify(){return ::Vector2(x,y);}
         Vec2      normalized(){return *this/length();}
         float     length(){return std::sqrt(std::powf(x, 2.0) + std::powf(y, 2.0));}
-        Vec2      rotate(float _angle){return Vec2();} // TODO
-        Vec2      rotate_pivot(float _angle, Vec2 _pivot_oint){return Vec2();} // TODO
+        Vec2      rotated(float _angle)
+        {
+            float r = _angle*(PI/180);
+            return Vec2(cos(r)*x + sin(r)*y, cos(r)*y - sin(r)*x);
+        } // TODO
+        Vec2      rotated_pivot(float _angle, Vec2 _pivot_oint)
+        {
+            Vec2 work_vector = *this - _pivot_oint;
+            return work_vector.rotated(_angle)+_pivot_oint;
+        } // TODO
         Vec2      invert(){return *this*-1;}
         //////////////////////////////////////////////////////////
         Vec2 operator/(Vec2 right){return Vec2(x/right.x, y/right.y);}
         Vec2 operator*(Vec2 right){return Vec2(x*right.x, y*right.y);}
-        Vec2 operator/=(float right){return Vec2(x/right, y/right);}
-        Vec2 operator*=(float right){return Vec2(x*right, y*right);}
+        Vec2& operator/=(const Vec2& right){x/=right.x; y/=right.y; return *this;}
+        Vec2& operator*=(const Vec2& right){x*=right.x; y*=right.y; return *this;}
+        Vec2& operator/=(float right){x/=right; y/=right; return *this;}
+        Vec2& operator*=(float right){x*=right; y*=right; return *this;}
         Vec2 operator+(const Vec2& right){return Vec2(x+right.x, y+right.y);}
         Vec2 operator-(const Vec2& right){return Vec2(x-right.x, y-right.y);}
+        Vec2& operator+=(const Vec2& right){x+=right.x; y+=right.y; return *this;}
+        Vec2& operator-=(const Vec2& right){x-=right.x; y-=right.y; return *this;}
         //Vec2 operator=(::Vector2 right){return Vec2(right.x,right.y);}
         ////////////////////////////////////////////////////////
         float x,y;

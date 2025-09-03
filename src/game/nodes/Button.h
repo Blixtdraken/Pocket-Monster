@@ -9,9 +9,10 @@
 class Button: public se::iNode
 {
 public:
-    std::string m_title;
     se::Vec2 m_size = {250, 80};
     float border_width = 6.0f;
+
+    
     
     void _ready() override;
     void _handleInput() override;
@@ -25,6 +26,9 @@ public:
 
     void setOnPressed(std::function<void()> _on_pressed){m_on_pressed = _on_pressed;}
     void setOnReleased(std::function<void()> _on_released){m_on_released = _on_released;}
+
+    void activate(){active = true;}
+    void deactivate(){active = false;}
 protected:
     std::function<void()> m_on_pressed = nullptr;
     std::function<void()> m_on_released = nullptr;
@@ -32,4 +36,6 @@ protected:
     bool m_is_just_pressed = false;
     bool m_is_just_released = false;
     bool m_is_hovered = false;
+
+    bool active = true;
 };

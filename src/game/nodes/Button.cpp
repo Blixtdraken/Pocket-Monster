@@ -6,13 +6,13 @@
 
 void Button::_ready()
 {
-    iNode::_ready();
 }
 
 void Button::_handleInput()
 {
+    if (!active || !visible) return;
+    
     se::Vec2 mouse_pos = GetMousePosition();
-    //std::cout << "X: " << mouse_pos.x << " | Y: " << mouse_pos.y << "\n";
 
     se::Vec2 rect_min = m_position;
     se::Vec2 rect_max = m_position + m_size;
@@ -50,6 +50,8 @@ void Button::_handleInput()
 
 void Button::_update(double _deltaTime)
 {
+    if (!active || !visible) return;
+    
     if (m_on_pressed && isJustPressed()) m_on_pressed();
     
     if (m_on_released && isJustReleased()) m_on_released();
@@ -62,7 +64,9 @@ void Button::_render()
     
     se::RGB color = isHovered() ? LIGHTGRAY : WHITE;
     color = isPressed() ? GRAY : color;
+    color = active ? color : DARKGRAY;
     se::RGB acc_color = isPressed() ? ORANGE : SKYBLUE;
+    acc_color = active ? acc_color : DARKPURPLE;
     
     Rectangle rect = Rectangle();
     Rectangle inner_rect = Rectangle();
@@ -77,8 +81,8 @@ void Button::_render()
     
     
     
-    DrawRectanglePro(rect, m_position.invert().rayify(), 0.0f, acc_color.rayify());
-    DrawRectanglePro(inner_rect, (m_position.invert()-se::Vec2(border_width/2.0f)).rayify(), 0.0f, color.rayify());
+    DrawRectanglePro(rect, m_position.invert().rayify(), m_rotation, acc_color.rayify());
+    DrawRectanglePro(inner_rect, (m_position.invert()-se::Vec2(border_width/2.0f)).rayify(), m_rotation, color.rayify());
     
    
     
