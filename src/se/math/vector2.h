@@ -15,16 +15,8 @@ namespace se
         Vector2   rayify(){return ::Vector2(x,y);}
         Vec2      normalized(){return *this/length();}
         float     length(){return std::sqrt(std::powf(x, 2.0) + std::powf(y, 2.0));}
-        Vec2      rotated(float _angle)
-        {
-            float r = _angle*(PI/180);
-            return Vec2(cos(r)*x + sin(r)*y, cos(r)*y - sin(r)*x);
-        } // TODO
-        Vec2      rotated_pivot(float _angle, Vec2 _pivot_oint)
-        {
-            Vec2 work_vector = *this - _pivot_oint;
-            return work_vector.rotated(_angle)+_pivot_oint;
-        } // TODO
+        Vec2      rotated(float _angle){float r = _angle*(PI/180);return Vec2(cos(r)*x + sin(r)*y, cos(r)*y - sin(r)*x);}
+        Vec2      rotated_pivot(float _angle, Vec2 _pivot_point){Vec2 work_vector = *this - _pivot_point;return work_vector.rotated(_angle)+_pivot_point;}
         Vec2      invert(){return *this*-1;}
         //////////////////////////////////////////////////////////
         Vec2 operator/(Vec2 right){return Vec2(x/right.x, y/right.y);}

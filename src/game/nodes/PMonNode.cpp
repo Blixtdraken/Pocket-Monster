@@ -3,8 +3,16 @@
 #include "math/rgb.h"
 #include "../consts.h"
 
+void PMonNode::setPMonIndex(const int& _index)
+{
+    m_current_pokemon = _index;
+    updateSprite();
+    m_on_pmon_changed(m_pmons[m_current_pokemon]);
+}
+
 void PMonNode::updateSprite()
 {
+    UnloadTexture(m_currentSprite);
     m_currentSprite = m_pmons[m_current_pokemon]->getSprites()[m_side == MonsterSide::FRIEND ? 1 : 0 ];
 }
 

@@ -28,6 +28,7 @@ public:
     
 
     void damage(float _damage);
+    void heal(float _amount);
     virtual bool _on_damage(float _damage){return true;} // Should return if damage should apply
     
 

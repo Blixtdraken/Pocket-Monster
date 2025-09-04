@@ -102,6 +102,8 @@
     <ClInclude Include="nodes\PMonNode.h" />
     <ClInclude Include="nodes\DescriptiveButton.h" />
     <ClInclude Include="nodes\TextButton.h" />
+    <ClInclude Include="pmonster\attack\children\HealingLeaf.h" />
+    <ClInclude Include="pmonster\children\Branchey.h" />
     <ClInclude Include="pmonster\PMonEnums.h" />
     <ClInclude Include="pmonster\attack\children\BasicAttack.h" />
     <ClInclude Include="pmonster\attack\children\Goop.h" />
@@ -195,6 +197,8 @@
       <AdditionalIncludeDirectories>..\..\include;..\se;</AdditionalIncludeDirectories>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="pmonster\attack\children\HealingLeaf.cpp" />
+    <ClCompile Include="pmonster\children\Branchey.cpp" />
     <ClCompile Include="pmonster\PMonEnums.cpp" />
     <ClCompile Include="pmonster\attack\children\BasicAttack.cpp" />
     <ClCompile Include="pmonster\attack\children\Goop.cpp" />

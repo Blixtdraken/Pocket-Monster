@@ -10,7 +10,13 @@ void Button::_ready()
 
 void Button::_handleInput()
 {
-    if (!active || !visible) return;
+    if (!active || !visible){
+        m_is_pressed = false;
+        m_is_hovered = false;
+        m_is_just_pressed = false;
+        m_is_just_released = false;
+        return;
+    }
     
     se::Vec2 mouse_pos = GetMousePosition();
 
@@ -32,10 +38,8 @@ void Button::_handleInput()
         }
         else if ((m_is_just_released = IsMouseButtonReleased(MOUSE_BUTTON_LEFT)))
         {
-            m_is_pressed = false;
+             m_is_pressed = false;
         }
-
-       
         
     }
     else
@@ -60,7 +64,6 @@ void Button::_update(double _deltaTime)
 
 void Button::_render()
 {
-    
     
     se::RGB color = isHovered() ? LIGHTGRAY : WHITE;
     color = isPressed() ? GRAY : color;

@@ -6,7 +6,7 @@ class HealthBar: public se::iNode
 {
 public:
     HealthBar(iPMon* _pmon):m_pmon(_pmon){}
-
+    void setNewPmon(iPMon* _pmon){m_pmon = _pmon;}
     se::Vec2 m_size = {450, 80};
     
     void _render() override;

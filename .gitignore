@@ -36,3 +36,8 @@ local.properties
 *.ipdb
 building
 obj
+game/Pocket Monster.exe
+game/Pocket Monster.pdb
+building
+src/game/obj
+src/se/obj

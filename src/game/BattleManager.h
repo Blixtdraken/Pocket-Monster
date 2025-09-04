@@ -19,6 +19,10 @@ protected:
     void handleEnemyTurn();
     void setAttackButtonsVisible(bool _visible);
     void setSelectButtonsVisible(bool _visible);
+    void handleDeadPlayer();
+    void handleDeadEnemy();
+    void updateAttackButtons();
+    
     enum TurnState
     {
         PLAYER_TURN = 0,
@@ -36,16 +40,14 @@ protected:
     
     
     std::vector<DescriptiveButton*> m_attack_buttons;
-    std::vector<TextButton*> m_pmon_buttons;
+    std::vector<TextButton*> m_select_buttons;
 public:
     //BattleManager(PMonNode* _player, PMonNode* _enemy, std::vector<DescriptiveButton> _attack_buttons, std::vector<TextButton> _pmon_buttons):m_player(_player), m_enemy(_enemy), m_pmon_buttons(_pmon_buttons), m_attack_buttons(_attack_buttons){}
-    BattleManager(se::iScene& scene);
+    BattleManager(se::iScene& _scene);
     
     
     void _ready() override;
     void _handleInput() override;
     void _update(double _deltaTime) override;
-    void handleDeadPlayer();
-    void handleDeadEnemy();
     void _render() override;
 };

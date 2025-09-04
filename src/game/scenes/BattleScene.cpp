@@ -4,6 +4,7 @@
 #include <print>
 
 
+#include "SceneManager.h"
 #include "../BattleManager.h"
 #include "../nodes/DescriptiveButton.h"
 #include "../nodes/HealthBar.h"
@@ -21,7 +22,7 @@ void BattleScene::_sceneSetup()
     addNode(new BattleManager(*this));
 
 
-    
+    //se::SceneManager::GetInstance().changeScene(new BattleScene());
     
     
     
