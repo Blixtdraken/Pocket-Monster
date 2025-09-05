@@ -21,7 +21,7 @@ protected:
     void handleDeadPlayer();
     void handleDeadEnemy();
     void updateAttackButtons();
-    
+    static void test(int nun, std::string text);
     enum TurnState
     {
         PLAYER_TURN = 0,

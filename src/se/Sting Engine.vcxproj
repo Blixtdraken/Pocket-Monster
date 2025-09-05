@@ -107,7 +107,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="Signal.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="interfaces\iNode.cpp" />
     <ClCompile Include="interfaces\iScene.cpp" />

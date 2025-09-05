@@ -5,7 +5,7 @@
 #include "nodes/HealthBar.h"
 #include "pmonster/children/Branchey.h"
 #include "pmonster/children/Gumboo.h"
-#include "scenes/BattleScene.h"
+
 
 
 BattleManager::BattleManager(se::iScene& _scene)
@@ -76,11 +76,11 @@ BattleManager::BattleManager(se::iScene& _scene)
     /////////////////////////////////////////////////////
 
     m_switch_pmon = new TextButton();
-    m_switch_pmon->setOnReleased([this]
+    m_switch_pmon->s_on_released += [this]
     {
         setSelectButtonsVisible(!m_select_buttons[0]->visible); // Toggle visibility and all should always be same visbility but incase they're not this line does also kinda of fix it.
         //se::SceneManager::GetInstance().changeScene(new BattleScene()); // Badly designed to change scene so I'm doo dooed
-    });
+    };
     m_switch_pmon->m_position.x = (SCREEN_WIDTH-m_switch_pmon->m_size.x)/2.0f;
     m_switch_pmon->m_text = "Switch Pokemon";
     _scene.addNode(m_switch_pmon);
@@ -94,30 +94,22 @@ BattleManager::BattleManager(se::iScene& _scene)
         text_button->m_text = name;
         text_button->m_position = se::Vec2((SCREEN_WIDTH-text_button->m_size.x)/2.0f, text_button->m_size.y*(static_cast<float>(i+1)+0.5f));
         
-        text_button->setOnReleased([this, i, text_button]
+        text_button->s_on_released += [this, i, text_button]
         {
             if (m_player->getPMonIndex() == i) return;
             m_player->setPMonIndex(i);
             setSelectButtonsVisible(false);
             text_button->activate();
-        });
+        };
         text_button->visible = false;
         m_select_buttons.push_back(text_button);
         _scene.addNode(text_button);
     }
 
-
-    Signal<int, std::string> signal;
     
-    signal += [](int num, std::string text)
-    {
-        
-    };
-    
-    signal.call(42, "thing");
 }
 
-
+void BattleManager::test(int nun, std::string text){}
 
 void BattleManager::_ready()
 {
@@ -195,15 +187,14 @@ void BattleManager::updateAttackButtons()
             m_attack_buttons[i]->deactivate();
             m_attack_buttons[i]->m_title = "";
             m_attack_buttons[i]->m_desc = "";
-            m_attack_buttons[i]->setOnReleased(nullptr);
+            //m_attack_buttons[i]->setOnReleased(nullptr); // TODO: FIX REMOVE
             continue;
         }
         
         iAttack* attack = friend_attacks[i];
 
         if (!attack->getAvailable()) m_switch_pmon->deactivate();   
-        
-        m_attack_buttons[i]->setOnReleased([this, attack]
+        std::function<void()> func_ptr = [this, attack]
         {
             attack->useAttack(*m_enemy->getPMon(), *m_player->getPMon());
             setAttackButtonsVisible(false);
@@ -211,7 +202,9 @@ void BattleManager::updateAttackButtons()
             m_switch_pmon->deactivate();
             m_turnstate = ENEMY_TURN;
             startTimer();
-        });
+        };
+        m_attack_buttons[i]->s_on_released -= func_ptr;
+        m_attack_buttons[i]->s_on_released += func_ptr;
         m_attack_buttons[i]->m_title = attack->getName();
         m_attack_buttons[i]->m_desc = attack->getDescription();
         m_attack_buttons[i]->activate();

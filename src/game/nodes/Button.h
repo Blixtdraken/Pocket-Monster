@@ -3,7 +3,7 @@
 #include <string>
 
 #include "interfaces/iNode.h"
-
+#include "signal.h"
 
 
 class Button: public se::iNode
@@ -24,16 +24,20 @@ public:
     bool isJustReleased(){return m_is_just_released;}
     bool isHovered(){return m_is_hovered;}
 
-    void setOnPressed(std::function<void()> _on_pressed){m_on_pressed = _on_pressed;}
-    void setOnReleased(std::function<void()> _on_released){m_on_released = _on_released;}
+    //void setOnPressed(std::function<void()> _on_pressed){s_on_pressed = _on_pressed;}
+    //void setOnReleased(std::function<void()> _on_released){m_on_released = _on_released;}
 
+    se::Signal< > s_on_pressed;
+    se::Signal< > s_on_released;
+    
     void activate(){active = true;}
     void deactivate(){active = false;}
 
     bool active = true;
 protected:
-    std::function<void()> m_on_pressed = nullptr;
-    std::function<void()> m_on_released = nullptr;
+    //std::function<void()> m_on_pressed = nullptr;
+    //std::function<void()> m_on_released = nullptr;
+
     bool m_is_pressed = false;
     bool m_is_just_pressed = false;
     bool m_is_just_released = false;
