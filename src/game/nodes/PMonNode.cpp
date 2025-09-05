@@ -5,9 +5,12 @@
 
 void PMonNode::setPMonIndex(const int& _index)
 {
+    if (getPMonIndex() == _index) return;
+    
     m_current_pokemon = _index;
     updateSprite();
     m_on_pmon_changed(m_pmons[m_current_pokemon]);
+    
 }
 
 void PMonNode::updateSprite()

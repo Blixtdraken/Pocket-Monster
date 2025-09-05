@@ -23,6 +23,7 @@ public:
     iPMon* getPMon(){return m_pmons[m_current_pokemon];}
     std::vector<iPMon*> getPMons() {return m_pmons;}
     void setPMonIndex(const int& _index);
+    const int& getPMonIndex(){return m_current_pokemon;}
 
     void setOnPmonChange(std::function<void(iPMon*)> _on_pmon_changed){m_on_pmon_changed = _on_pmon_changed;}
     

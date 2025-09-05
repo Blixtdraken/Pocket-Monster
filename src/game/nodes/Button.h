@@ -29,6 +29,8 @@ public:
 
     void activate(){active = true;}
     void deactivate(){active = false;}
+
+    bool active = true;
 protected:
     std::function<void()> m_on_pressed = nullptr;
     std::function<void()> m_on_released = nullptr;
@@ -37,5 +39,5 @@ protected:
     bool m_is_just_released = false;
     bool m_is_hovered = false;
 
-    bool active = true;
+
 };

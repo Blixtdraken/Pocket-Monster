@@ -12,8 +12,7 @@ class BattleManager : public se::iNode //iNode for it to tick
 
     
 protected:
-
-    void openSelector();
+    
     void startTimer();
     void handlePlayerTurn();
     void handleEnemyTurn();
@@ -36,7 +35,7 @@ protected:
     TurnState m_turnstate = PLAYER_TURN;
     PMonNode* m_player;
     PMonNode* m_enemy;
-
+    TextButton* m_switch_pmon;
     
     
     std::vector<DescriptiveButton*> m_attack_buttons;

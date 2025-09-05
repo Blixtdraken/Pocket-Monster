@@ -68,8 +68,8 @@ void Button::_render()
     se::RGB color = isHovered() ? LIGHTGRAY : WHITE;
     color = isPressed() ? GRAY : color;
     color = active ? color : DARKGRAY;
-    se::RGB acc_color = isPressed() ? ORANGE : SKYBLUE;
-    acc_color = active ? acc_color : DARKPURPLE;
+    se::RGB acc_color = isPressed() ? ORANGE : BLACK;
+    acc_color = active ? acc_color : se::RGB(80,0,0);
     
     Rectangle rect = Rectangle();
     Rectangle inner_rect = Rectangle();
