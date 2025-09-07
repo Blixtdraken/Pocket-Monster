@@ -10,7 +10,6 @@
 
 BattleManager::BattleManager(se::iScene& _scene)
 {
-
     m_player = new PMonNode({
         new Branchey(),
         new Gumboo(),
@@ -105,16 +104,6 @@ BattleManager::BattleManager(se::iScene& _scene)
         m_select_buttons.push_back(text_button);
         _scene.addNode(text_button);
     }
-
-
-    Signal<int, std::string> signal;
-    
-    signal += [](int num, std::string text)
-    {
-        
-    };
-    
-    signal.call(42, "thing");
 }
 
 

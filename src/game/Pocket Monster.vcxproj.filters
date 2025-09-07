@@ -21,8 +21,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleManager.h" />
     <ClInclude Include="consts.h" />
+    <ClInclude Include="nodes\BackgroundNode.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
     <ClInclude Include="nodes\Button.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\DescriptiveButton.h">
+      <Filter>nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="nodes\HealthBar.h">
       <Filter>nodes</Filter>
     </ClInclude>
     <ClInclude Include="nodes\PMonNode.h">
@@ -40,11 +50,17 @@
     <ClInclude Include="pmonster\attack\children\Goop.h">
       <Filter>pmonster\attack\children</Filter>
     </ClInclude>
+    <ClInclude Include="pmonster\attack\children\HealingLeaf.h">
+      <Filter>pmonster\attack\children</Filter>
+    </ClInclude>
     <ClInclude Include="pmonster\attack\children\Slap.h">
       <Filter>pmonster\attack\children</Filter>
     </ClInclude>
     <ClInclude Include="pmonster\attack\iAttack.h">
       <Filter>pmonster\attack</Filter>
+    </ClInclude>
+    <ClInclude Include="pmonster\children\Branchey.h">
+      <Filter>pmonster\children</Filter>
     </ClInclude>
     <ClInclude Include="pmonster\children\Gumboo.h">
       <Filter>pmonster\children</Filter>
@@ -57,8 +73,18 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleManager.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="nodes\BackgroundNode.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
     <ClCompile Include="nodes\Button.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\DescriptiveButton.cpp">
+      <Filter>nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="nodes\HealthBar.cpp">
       <Filter>nodes</Filter>
     </ClCompile>
     <ClCompile Include="nodes\PMonNode.cpp">
@@ -76,11 +102,17 @@
     <ClCompile Include="pmonster\attack\children\Goop.cpp">
       <Filter>pmonster\attack\children</Filter>
     </ClCompile>
+    <ClCompile Include="pmonster\attack\children\HealingLeaf.cpp">
+      <Filter>pmonster\attack\children</Filter>
+    </ClCompile>
     <ClCompile Include="pmonster\attack\children\Slap.cpp">
       <Filter>pmonster\attack\children</Filter>
     </ClCompile>
     <ClCompile Include="pmonster\attack\iAttack.cpp">
       <Filter>pmonster\attack</Filter>
+    </ClCompile>
+    <ClCompile Include="pmonster\children\Branchey.cpp">
+      <Filter>pmonster\children</Filter>
     </ClCompile>
     <ClCompile Include="pmonster\children\Gumboo.cpp">
       <Filter>pmonster\children</Filter>

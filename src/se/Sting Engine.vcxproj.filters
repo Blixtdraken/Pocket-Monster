@@ -13,6 +13,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Signal.h" />
     <ClInclude Include="WindowManager.h" />
     <ClInclude Include="debug\errors.h">
       <Filter>debug</Filter>
@@ -32,6 +33,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Signal.cpp" />
     <ClCompile Include="WindowManager.cpp" />
     <ClCompile Include="interfaces\iNode.cpp">
       <Filter>interfaces</Filter>
