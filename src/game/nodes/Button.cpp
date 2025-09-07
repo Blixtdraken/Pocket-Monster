@@ -56,9 +56,9 @@ void Button::_update(double _deltaTime)
 {
     if (!active || !visible) return;
     
-    if (isJustPressed()) s_on_pressed();
+    if (m_on_pressed && isJustPressed()) m_on_pressed();
     
-    if (isJustReleased()) s_on_released();
+    if (m_on_released && isJustReleased()) m_on_released();
     
 }
 
